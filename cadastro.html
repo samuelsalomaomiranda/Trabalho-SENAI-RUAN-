@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nation Battle</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <a href="index.html"><button type="button">Voltar</button></a>
+    <form action="php" method="post" enctype="multipart/form-data">
+        <img src="img/logo.png" alt="logo" width="200px">
+        <h2> - Criar Conta - </h2>
+
+        <label for="nome">Nome</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">E-mail</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefone">Telefone</label><br>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+
+        <label for="senha">Senha</label><br>
+        <input type="password" id="senha" name="senha" required><br><br>
+
+        <label for="nascimento">Data de nascimento</label><br>
+        <input type="date" id="nascimento" name="nascimento" required><br><br>
+
+        <h2>Gênero</h2>
+        <input type="radio" id="masculino" name="genero" value="masculino" required>
+        <label for="masculino">Masculino</label><br>
+
+        <input type="radio" id="feminino" name="genero" value="feminino">
+        <label for="feminino">Feminino</label><br>
+
+        <input type="radio" id="outro" name="genero" value="outro">
+        <label for="outro">Não dizer</label>
+        <br>
+
+        <h2>Áreas de interesse</h2>
+        <input type="checkbox" id="armaduras" name="interesses" value="armaduras">
+        <label for="armaduras">Armaduras</label><br>
+
+        <input type="checkbox" id="espadas" name="interesses" value="espadas">
+        <label for="espadas">Espadas</label><br>
+
+        <input type="checkbox" id="historias" name="interesses" value="historias">
+        <label for="historias">Histórias</label><br>
+
+        <input type="checkbox" id="torneios" name="interesses" value="torneios">
+        <label for="torneios">Torneios</label>
+        <br>
+
+        <h2>Estado:</h2>
+        <select id="estado" name="estado" required>
+            <option value="">Selecione</option>
+            <option value="sp">SP</option>
+            <option value="rj">RJ</option>
+            <option value="mg">MG</option>
+            <option value="rs">RS</option>
+            <option value="pr">PR</option>
+            <option value="sc">SC</option>
+        </select>
+        <br><br>
+
+        <h2>Comprovante (PDF, PNG, JPG)</h2>
+        <input type="file" id="documento" name="documento" accept=".pdf,.png,.jpeg,.jpg"><br><br>
+
+        <h2>Comentario</h2>
+        <textarea id="mensagem" name="mensagem" rows="5" cols="40" placeholder="Escreva sua mensagem..."></textarea><br><br>
+
+        <h2>Termos e condições</h2>
+        <input type="checkbox" id="aceito" name="aceito" value="aceito" required>
+        <label for="aceito">Aceito os termos e condições</label>
+        <br><br>
+
+        <button type="submit" href="index.html">Cadastrar</button>
+        <br>
+        <button type="reset">Limpar</button>
+
+        <br>
+        <a href="login.html">Ir Para o Login</a>
+        <br>
+    </form>
+</body>
+</html>
